@@ -2,6 +2,7 @@ package datastructures;
 // Grafo no dirigido y ponderado con lista de adyacencia.
 // Nodos identificados por String (ID de atraccion).
 // Incluye Dijkstra para ruta optima y BFS para conectividad.
+
 public class Grafo {
 
     private static class Arista {
