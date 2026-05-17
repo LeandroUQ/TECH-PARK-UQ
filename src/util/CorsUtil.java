@@ -12,8 +12,8 @@ public class CorsUtil {
 
     // Devuelve true si la petición era preflight (OPTIONS) y ya fue respondida
     public static boolean handlePreflight(HttpExchange exchange) throws java.io.IOException {
-        addHeaders(exchange);
         if ("OPTIONS".equalsIgnoreCase(exchange.getRequestMethod())) {
+            addHeaders(exchange);
             exchange.sendResponseHeaders(204, -1);
             return true;
         }
